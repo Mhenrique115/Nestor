@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentacao de instalacao e uso do Nestor, um robo para tarefas simples e repetitivas.">
+    <title>Nestor | Documentacao</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Inicio da documentacao do Nestor">
+        <img src="assets/nestor-icon.jpg" alt="" width="40" height="40">
+        <span>Nestor</span>
+      </a>
+      <nav aria-label="Navegacao principal">
+        <a href="#instalacao">Instalacao</a>
+        <a href="#uso">Uso</a>
+        <a href="#listas">Listas</a>
+        <a href="#deploy">Deploy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-content">
+          <p class="eyebrow">Robo de automacao simples</p>
+          <h1>Nestor</h1>
+          <p class="lead">
+            Nestor e seu amigo robo que lhe apoia em tarefas simples e repetitivas. Voce pode instruir ele a fazer uma tarefa e ele repete pelo tempo que voce necessitar.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="downloads/Nestor.exe" download>
+              Baixar Nestor
+            </a>
+            <a class="button secondary" href="https://github.com/Mhenrique115/Nestor" target="_blank" rel="noreferrer">
+              Ver no GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Exemplos de uso">
+          <div>
+            <strong>Preencher uma lista</strong>
+            <span>Repita campos, nomes, clientes ou produtos usando TXT.</span>
+          </div>
+          <div>
+            <strong>Cadastrar produtos</strong>
+            <span>Monte uma sequencia de cliques, textos e esperas.</span>
+          </div>
+          <div>
+            <strong>Sua criatividade manda</strong>
+            <span>Use o robo para tarefas repetitivas do dia a dia.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="instalacao">
+        <div class="section-heading">
+          <p class="eyebrow">Instalacao</p>
+          <h2>Como instalar</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>Baixe o Nestor</h3>
+            <p>Clique no botao "Baixar Nestor" e salve o arquivo <strong>Nestor.exe</strong> no seu computador.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Abra o executavel</h3>
+            <p>Execute o arquivo baixado. Na primeira abertura, o Windows pode mostrar um aviso porque o aplicativo nao possui assinatura digital.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Permita a automacao</h3>
+            <p>Como o Nestor controla mouse e teclado, antivirus ou politicas da empresa podem pedir permissao.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="uso">
+        <div class="section-heading">
+          <p class="eyebrow">Primeiros passos</p>
+          <h2>Como usar o Nestor</h2>
+          <p>Monte uma sequencia com as acoes desejadas, salve se quiser reutilizar depois e rode o robo quando a tela alvo estiver pronta.</p>
+        </div>
+        <div class="checklist">
+          <p>Escolha o tipo de acao no campo "O que vou fazer?".</p>
+          <p>Preencha os dados da acao escolhida.</p>
+          <p>Clique em "Adicionar acao" ou pressione F4.</p>
+          <p>Use F1 para iniciar e F2 para parar.</p>
+          <p>Salve configuracoes em JSON para reaproveitar depois.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Acoes</p>
+          <h2>O que o robo consegue fazer</h2>
+        </div>
+        <div class="cards">
+          <article>
+            <h3>Clique</h3>
+            <p>Clica em coordenadas da tela. Posicione o mouse e pressione F3 para capturar X e Y.</p>
+          </article>
+          <article>
+            <h3>Escrita</h3>
+            <p>Digita um texto fixo no ponto selecionado da tela.</p>
+          </article>
+          <article>
+            <h3>Backspace</h3>
+            <p>Apaga uma quantidade definida de caracteres.</p>
+          </article>
+          <article>
+            <h3>Espere</h3>
+            <p>Pausa a automacao por alguns segundos entre uma acao e outra.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="listas">
+        <div class="section-heading">
+          <p class="eyebrow">Listas TXT</p>
+          <h2>Repetindo tarefas com listas</h2>
+          <p>Crie um arquivo TXT com itens separados por virgula. O Nestor repete a sequencia completa para cada item da lista.</p>
+        </div>
+        <div class="code-box">
+          <span>lista.txt</span>
+          <code>cliente 1,cliente 2,cliente 3</code>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Atalhos</p>
+          <h2>Comandos rapidos</h2>
+        </div>
+        <div class="shortcuts">
+          <div><kbd>F1</kbd><span>Inicia a automacao</span></div>
+          <div><kbd>F2</kbd><span>Para a automacao</span></div>
+          <div><kbd>F3</kbd><span>Captura a posicao do mouse</span></div>
+          <div><kbd>F4</kbd><span>Adiciona a acao preenchida</span></div>
+        </div>
+      </section>
+
+      <section class="section deploy" id="deploy">
+        <div class="section-heading">
+          <p class="eyebrow">GitHub Pages</p>
+          <h2>Deploy no repositorio Mhenrique115/Nestor</h2>
+          <p>Esta pasta <strong>docs</strong> esta pronta para ser usada como origem do GitHub Pages.</p>
+        </div>
+        <ol>
+          <li>Envie a pasta <strong>docs</strong> para o repositorio <strong>Mhenrique115/Nestor</strong>.</li>
+          <li>No GitHub, abra <strong>Settings</strong>, depois <strong>Pages</strong>.</li>
+          <li>Em <strong>Build and deployment</strong>, escolha <strong>Deploy from a branch</strong>.</li>
+          <li>Selecione a branch <strong>main</strong> e a pasta <strong>/docs</strong>.</li>
+          <li>A pagina ficara disponivel em <strong>https://mhenrique115.github.io/Nestor/</strong>.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <span>Nestor</span>
+      <a href="https://github.com/Mhenrique115/Nestor" target="_blank" rel="noreferrer">Repositorio GitHub</a>
+    </footer>
+  </body>
+</html>
