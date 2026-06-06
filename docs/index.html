@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentação de instalação e uso do Nestor, um robô para tarefas simples e repetitivas.">
+    <title>Nestor | Documentação</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Início da documentação do Nestor">
+        <img src="assets/nestor-icon.jpg" alt="" width="40" height="40">
+        <span>Nestor</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#instalacao">Instalação</a>
+        <a href="#uso">Uso</a>
+        <a href="#listas">Listas</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-content">
+          <p class="eyebrow">Robô de automação simples</p>
+          <h1>Nestor</h1>
+          <p class="lead">
+            Nestor é seu amigo robô que lhe apoia em tarefas simples e repetitivas. Você pode instruir ele a fazer uma tarefa e ele repete pelo tempo que você necessitar.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="downloads/Nestor-Setup.exe" download>
+              Baixar Nestor
+            </a>
+            <a class="button secondary" href="https://github.com/Mhenrique115/Nestor" target="_blank" rel="noreferrer">
+              Ver no GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Exemplos de uso">
+          <div>
+            <strong>Preencher uma lista</strong>
+            <span>Repita campos, nomes, clientes ou produtos usando TXT.</span>
+          </div>
+          <div>
+            <strong>Cadastrar produtos</strong>
+            <span>Monte uma sequência de cliques, textos e esperas.</span>
+          </div>
+          <div>
+            <strong>Sua criatividade manda</strong>
+            <span>Use o robô para tarefas repetitivas do dia a dia.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="instalacao">
+        <div class="section-heading">
+          <p class="eyebrow">Instalação</p>
+          <h2>Como instalar</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>Baixe o Nestor</h3>
+            <p>Clique no botão "Baixar Nestor" e salve o arquivo <strong>Nestor-Setup.exe</strong> no seu computador.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Abra o instalador</h3>
+            <p>Execute o arquivo baixado. Na primeira abertura, o Windows pode mostrar um aviso porque o aplicativo não possui assinatura digital.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Permita a automação</h3>
+            <p>Como o Nestor controla mouse e teclado, antivírus ou políticas da empresa podem pedir permissão.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="uso">
+        <div class="section-heading">
+          <p class="eyebrow">Primeiros passos</p>
+          <h2>Como usar o Nestor</h2>
+          <p>Monte uma sequência com as ações desejadas, salve se quiser reutilizar depois e rode o robô quando a tela alvo estiver pronta.</p>
+        </div>
+        <div class="checklist">
+          <p>Escolha o tipo de ação no campo "O que vou fazer?".</p>
+          <p>Preencha os dados da ação escolhida.</p>
+          <p>Clique em "Adicionar ação" ou pressione F4.</p>
+          <p>Use F1 para iniciar e F2 para parar.</p>
+          <p>Salve configurações em JSON para reaproveitar depois.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Ações</p>
+          <h2>O que o robô consegue fazer</h2>
+        </div>
+        <div class="cards">
+          <article>
+            <h3>Clique</h3>
+            <p>Clica em coordenadas da tela. Posicione o mouse e pressione F3 para capturar X e Y.</p>
+          </article>
+          <article>
+            <h3>Escrita</h3>
+            <p>Digita um texto fixo no ponto selecionado da tela.</p>
+          </article>
+          <article>
+            <h3>Backspace</h3>
+            <p>Apaga uma quantidade definida de caracteres.</p>
+          </article>
+          <article>
+            <h3>Espere</h3>
+            <p>Pausa a automação por alguns segundos entre uma ação e outra.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="listas">
+        <div class="section-heading">
+          <p class="eyebrow">Listas TXT</p>
+          <h2>Repetindo tarefas com listas</h2>
+          <p>Crie um arquivo TXT com itens separados por vírgula. O Nestor repete a sequência completa para cada item da lista.</p>
+        </div>
+        <div class="code-box">
+          <span>lista-exemplo.txt</span>
+          <code>cliente 1,cliente 2,cliente 3</code>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Atalhos</p>
+          <h2>Comandos rápidos</h2>
+        </div>
+        <div class="shortcuts">
+          <div><kbd>F1</kbd><span>Inicia a automação</span></div>
+          <div><kbd>F2</kbd><span>Para a automação</span></div>
+          <div><kbd>F3</kbd><span>Captura a posição do mouse</span></div>
+          <div><kbd>F4</kbd><span>Adiciona a ação preenchida</span></div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <span>Nestor</span>
+      <a href="https://github.com/Mhenrique115/Nestor" target="_blank" rel="noreferrer">Repositório GitHub</a>
+    </footer>
+  </body>
+</html>
